@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
+
+nav a, nav a:visited {
+  font-family: 'Anaheim';
+}
