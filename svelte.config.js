@@ -2,11 +2,6 @@ import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	vite: {
-		optimizeDeps: {
-			exclude: ['dayjs']
-		}
-	},
 	kit: {
 		adapter: adapter(),
 
