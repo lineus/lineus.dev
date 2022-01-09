@@ -46,20 +46,20 @@
 
 <style>
   #wrapper {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   #comingsoon {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
     background: #222;
     color: #ddd;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     text-transform: uppercase;
   }
 
@@ -67,7 +67,7 @@
     text-align: center;
     width: 100%;
     font-size: 5rem;
-    background: #ddd;
+    background: #eee;
     color: #222;
     padding-left: 2rem;
     padding-right: 2rem;

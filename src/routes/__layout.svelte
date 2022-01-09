@@ -20,8 +20,10 @@
 		box-sizing: border-box;
 	}
 	nav {
+		z-index: 100;
+		position: relative;
 		width: 100%;
-		background: #ddd;
+		background: #fff;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
