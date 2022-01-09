@@ -12,6 +12,10 @@
     }
   }
 
+  function ldate() {
+    return launchDate.format('M/DD/YYYY');
+  }
+
   let tilLaunch = calculateTimeDifferences();
 
   setInterval(() => tilLaunch = calculateTimeDifferences(), 1000 );
@@ -20,21 +24,21 @@
 
 <div id="wrapper">
   <div id="comingsoon">
-    <h1 class="shadow">coming soon</h1>
+    <h1 class="shadow">launches <span class="lighten">{ldate()}</span> </h1>
     <span class="measurement shadow">
-      <p> seconds until launch </p>
+      <p> seconds</p>
       <h5>{ tilLaunch.seconds }</h5>
     </span>
     <span class="measurement shadow">
-      <p> minutes until launch </p>
+      <p> minutes</p>
       <h5>{ tilLaunch.minutes }</h5>
     </span>
     <span class="measurement shadow">
-      <p> hours until launch </p>
+      <p> hours</p>
       <h5>{ tilLaunch.hours }</h5>
     </span>
     <span class="measurement shadow">
-      <p> days until launch </p>
+      <p> days</p>
       <h5>{ tilLaunch.days }</h5>
     </span>
   </div>
@@ -70,6 +74,10 @@
     z-index: 5;
   }
   
+  .lighten {
+    opacity: .5;
+  }
+
   .shadow {
     box-shadow: 2px 5px 10px #222;
   }
@@ -119,5 +127,20 @@
 
   span.measurement > h5 {
     font-size: 5rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #comingsoon > h1 {
+      font-size: 2rem;
+    }
+    #comingsoon > span {
+      width: 100%;
+    }
+    span.measurement > p {
+      font-size: 1rem;
+    }
+    span.measurement > h5 {
+      font-size: 2rem;
+    }
   }
 </style>
