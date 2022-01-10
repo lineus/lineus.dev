@@ -24,4 +24,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image for dev
-      run: docker build . --file Dockerfile --tag lineus-dot-dev:$(data +%s)
+      run: docker build . --file Dockerfile --tag lineus-dot-dev:$(date +%s)
