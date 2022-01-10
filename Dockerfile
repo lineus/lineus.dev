@@ -12,6 +12,7 @@ FROM base AS run
 WORKDIR /site
 COPY --from=build /pre/build /site/build
 COPY --from=build /pre/package.json /site/package.json
+COPY --from=build /pre/node_modules/dayjs /site/node_modules/dayjs
 
 ENV PORT="5556"
 ENTRYPOINT [ "node", "./build/index.js" ]
