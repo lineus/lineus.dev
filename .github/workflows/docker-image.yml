@@ -8,6 +8,7 @@ on:
 
 env:
   IMAGE_NAME: 'lineus-dot-dev':$(date +%s)
+
 jobs:
 
   build-for-production:
