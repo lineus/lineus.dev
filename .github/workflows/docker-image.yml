@@ -10,7 +10,7 @@ jobs:
 
   build-for-production:
     env:
-      IMAGE_NAME: lineus-dot-dev-$(date +%s):latest
+      IMAGE_NAME: lineus-dot-dev:latest
 
     runs-on: ubuntu-latest
 
