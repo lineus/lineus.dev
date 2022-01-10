@@ -14,5 +14,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: Build the Docker image for lightsail
+      run: docker build . --file Dockerfile --tag lineus-dot-dev-prod:$(date +%s)
       run: docker build . --file Dockerfile --tag lineus-dot-dev:$(date +%s)
