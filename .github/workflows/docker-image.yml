@@ -9,7 +9,7 @@ on:
 jobs:
 
   build-for-production:
-    with:
+    env:
       IMAGE_NAME: lineus-dot-dev:$(date +%s)
 
     runs-on: ubuntu-latest
