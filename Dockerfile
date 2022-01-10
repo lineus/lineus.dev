@@ -10,7 +10,7 @@ RUN npm install && npm run build
 
 FROM base AS run
 WORKDIR /site
-COPY --from=build /pre/build/* /site/build/
+COPY --from=build /pre/build /site
 COPY --from=build /pre/package.json /site/package.json
 
 ENV PORT="5556"
