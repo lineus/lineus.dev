@@ -1,7 +1,7 @@
 <script>
   import { dayjs } from '$lib/dayjs.js';
 
-  const launchDate = dayjs(new Date(2022, 3, 1));
+  const launchDate = dayjs(new Date(2022, 3, 23));
   
   function calculateTimeDifferences() {
     return {
